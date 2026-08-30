@@ -127,11 +127,11 @@ Instead of leaning on an LLM alone, this project implements a **production-style
 
 ## 📸 Screenshots
 
-![Copilot answering a Spark troubleshooting question](docs/screenshots/copilot-answer.png)
+![Copilot answering a Spark troubleshooting question](docs/screenshots/copilot-answer.jpeg)
 
-![Monitoring dashboard overview](docs/screenshots/dashboard-overview.png)
+![Monitoring dashboard overview](docs/screenshots/dashboard-overview.jpeg)
 
-![Monitoring dashboard feedback trends](docs/screenshots/dashboard-feedback-trends.png)
+![Monitoring dashboard feedback trends](docs/screenshots/dashboard-feedback-trends.jpeg)
 
 ---
 
