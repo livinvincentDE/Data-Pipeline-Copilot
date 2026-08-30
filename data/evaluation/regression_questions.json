@@ -1,0 +1,27 @@
+[
+    {
+        "question": "Why is my Spark job slow?",
+        "expected_document_id": "spark_002",
+        "technology": "Apache Spark"
+    },
+    {
+        "question": "My Spark job keeps running out of memory.",
+        "expected_document_id": "spark_001",
+        "technology": "Apache Spark"
+    },
+    {
+        "question": "Some Spark tasks take much longer than others.",
+        "expected_document_id": "spark_003",
+        "technology": "Apache Spark"
+    },
+    {
+        "question": "My Airflow DAG is not starting.",
+        "expected_document_id": "airflow_001",
+        "technology": "Apache Airflow"
+    },
+    {
+        "question": "Kafka consumers are falling behind.",
+        "expected_document_id": "kafka_001",
+        "technology": "Apache Kafka"
+    }
+]

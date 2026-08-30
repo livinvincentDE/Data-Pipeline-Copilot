@@ -1,0 +1,49 @@
+[
+    {
+        "question": "Why is my Spark job slow?",
+        "expected_topics": [
+            "inefficient transformations",
+            "partitions",
+            "data skew",
+            "shuffle",
+            "Spark UI"
+        ]
+    },
+    {
+        "question": "My Spark job is running out of memory. What should I check?",
+        "expected_topics": [
+            "executor memory",
+            "partition",
+            "data skew",
+            "intermediate data"
+        ]
+    },
+    {
+        "question": "My Airflow DAG is not running. What could be wrong?",
+        "expected_topics": [
+            "start_date",
+            "schedule",
+            "paused",
+            "scheduler",
+            "import errors"
+        ]
+    },
+    {
+        "question": "Why does my Kafka consumer lag keep increasing?",
+        "expected_topics": [
+            "consumer",
+            "processing",
+            "partitions",
+            "throughput"
+        ]
+    },
+    {
+        "question": "Why am I getting duplicate records in my pipeline?",
+        "expected_topics": [
+            "duplicate",
+            "deduplication",
+            "primary key",
+            "records"
+        ]
+    }
+]

@@ -1,0 +1,100 @@
+[
+  {
+    "id": "airflow_001",
+    "technology": "Apache Airflow",
+    "topic": "DAG Scheduling",
+    "title": "Airflow DAG Is Not Running",
+    "content": "An Airflow DAG may not run because its start_date is in the future, its schedule configuration is incorrect, the DAG is paused, or the scheduler is not running. Check the DAG status in the Airflow UI, verify the schedule configuration, confirm that the scheduler process is healthy, and ensure that the DAG file has no import errors."
+  },
+  {
+    "id": "airflow_002",
+    "technology": "Apache Airflow",
+    "topic": "Task Failures",
+    "title": "Airflow Task Is Failing",
+    "content": "An Airflow task can fail because of Python exceptions, connection problems, missing environment variables, incorrect task configuration, or unavailable external services. Review the task logs to identify the exception, verify connections and credentials, and check whether dependent services are available."
+  },
+  {
+    "id": "airflow_003",
+    "technology": "Apache Airflow",
+    "topic": "Retries",
+    "title": "Airflow Task Retries",
+    "content": "Airflow retries allow failed tasks to run again automatically. Configure retries, retry_delay, and optionally exponential backoff. Retries are useful for temporary failures such as network problems, but repeatedly retrying permanent failures can delay the workflow."
+  },
+  {
+    "id": "spark_001",
+    "technology": "Apache Spark",
+    "topic": "Memory",
+    "title": "Spark Out Of Memory Error",
+    "content": "Spark jobs can fail with out of memory errors when partitions are too large, data is skewed, executor memory is insufficient, or transformations create excessive intermediate data. Possible solutions include increasing executor memory, repartitioning the data, reducing partition size, caching selectively, and investigating skew."
+  },
+  {
+    "id": "spark_002",
+    "technology": "Apache Spark",
+    "topic": "Performance",
+    "title": "Spark Job Is Slow",
+    "content": "A slow Spark job may be caused by inefficient transformations, too few or too many partitions, data skew, expensive shuffle operations, unnecessary caching, or insufficient cluster resources. Use the Spark UI to inspect stages and tasks and identify bottlenecks."
+  },
+  {
+    "id": "spark_003",
+    "technology": "Apache Spark",
+    "topic": "Data Skew",
+    "title": "Spark Data Skew",
+    "content": "Data skew occurs when some Spark partitions contain much more data than others. Skew causes a small number of tasks to run significantly longer. Possible solutions include salting skewed keys, repartitioning data, filtering unnecessary records, and using adaptive query execution where appropriate."
+  },
+  {
+    "id": "kafka_001",
+    "technology": "Apache Kafka",
+    "topic": "Consumer Lag",
+    "title": "Kafka Consumer Lag Increasing",
+    "content": "Kafka consumer lag increases when consumers cannot process messages as quickly as producers generate them. Causes include slow processing, insufficient consumers, partition imbalance, downstream service bottlenecks, and consumer failures. Monitor consumer throughput and partition assignment."
+  },
+  {
+    "id": "kafka_002",
+    "technology": "Apache Kafka",
+    "topic": "Partitions",
+    "title": "Kafka Partition Imbalance",
+    "content": "Kafka partition imbalance can cause uneven workload distribution across consumers and brokers. Ensure partitions are distributed appropriately and consumer groups have enough active consumers. Adding consumers beyond the number of partitions does not increase parallelism."
+  },
+  {
+    "id": "dbt_001",
+    "technology": "dbt",
+    "topic": "Testing",
+    "title": "dbt Test Failure",
+    "content": "A dbt test failure means that data does not satisfy an expected condition. Common failures include null values, duplicate values, broken relationships, and unexpected values. Inspect the failing records and determine whether the problem is in the source data, transformation logic, or test definition."
+  },
+  {
+    "id": "dbt_002",
+    "technology": "dbt",
+    "topic": "Incremental Models",
+    "title": "dbt Incremental Model Problems",
+    "content": "dbt incremental models can produce incorrect results when incremental filtering logic misses updated records or when unique keys are configured incorrectly. Review the incremental condition, unique_key configuration, and handling of late-arriving data."
+  },
+  {
+    "id": "quality_001",
+    "technology": "Data Quality",
+    "topic": "Null Values",
+    "title": "Unexpected Null Values",
+    "content": "Unexpected null values may be caused by missing source data, failed joins, schema changes, or transformation errors. Identify when null values first appear in the pipeline and validate source systems, joins, and transformation logic."
+  },
+  {
+    "id": "quality_002",
+    "technology": "Data Quality",
+    "topic": "Duplicates",
+    "title": "Duplicate Records",
+    "content": "Duplicate records may occur because of repeated ingestion, missing deduplication logic, incorrect joins, or replayed events. Identify the business key used to define uniqueness and investigate where duplicate records first enter the pipeline."
+  },
+  {
+    "id": "quality_003",
+    "technology": "Data Quality",
+    "topic": "Schema Drift",
+    "title": "Schema Drift",
+    "content": "Schema drift occurs when the structure of incoming data changes unexpectedly. Examples include added columns, removed columns, renamed fields, or data type changes. Detect schema changes automatically and establish compatibility rules and alerts."
+  },
+  {
+    "id": "quality_004",
+    "technology": "Data Quality",
+    "topic": "Freshness",
+    "title": "Data Freshness Problems",
+    "content": "Data freshness issues occur when expected data arrives late or pipeline processing is delayed. Monitor source arrival times, pipeline execution duration, upstream dependencies, and service availability. Define freshness SLAs and alerts."
+  }
+]

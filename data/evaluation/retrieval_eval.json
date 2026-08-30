@@ -1,0 +1,54 @@
+[
+    {
+        "question": "My Spark application is taking much longer than expected to finish. What could be causing this?",
+        "relevant_document_id": "spark_002"
+    },
+    {
+        "question": "One of my Spark jobs keeps crashing because it does not have enough memory.",
+        "relevant_document_id": "spark_001"
+    },
+    {
+        "question": "A few Spark tasks run much longer than the others and delay the entire job.",
+        "relevant_document_id": "spark_003"
+    },
+    {
+        "question": "My scheduled Airflow workflow never starts even though I created the DAG.",
+        "relevant_document_id": "airflow_001"
+    },
+    {
+        "question": "An Airflow task keeps failing during execution. How can I troubleshoot it?",
+        "relevant_document_id": "airflow_002"
+    },
+    {
+        "question": "Why does Airflow keep attempting the same task multiple times?",
+        "relevant_document_id": "airflow_003"
+    },
+    {
+        "question": "My Kafka consumers cannot keep up with the incoming messages.",
+        "relevant_document_id": "kafka_001"
+    },
+    {
+        "question": "Some Kafka partitions are receiving much more traffic than others.",
+        "relevant_document_id": "kafka_002"
+    },
+    {
+        "question": "Columns that should contain values are unexpectedly empty in my dataset.",
+        "relevant_document_id": "quality_001"
+    },
+    {
+        "question": "I am seeing the same records appearing more than once in my data.",
+        "relevant_document_id": "quality_002"
+    },
+    {
+        "question": "My reports are using old data because the latest pipeline output is delayed.",
+        "relevant_document_id": "quality_004"
+    },
+    {
+        "question": "The structure of my incoming data suddenly changed and broke my pipeline.",
+        "relevant_document_id": "quality_003"
+    },
+    {
+        "question": "My dbt incremental pipeline is not updating data correctly.",
+        "relevant_document_id": "dbt_002"
+    }
+]
